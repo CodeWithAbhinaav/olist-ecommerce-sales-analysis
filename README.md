@@ -30,13 +30,13 @@ The project uses the **Brazilian Olist E-Commerce dataset**.
 
 The main tables used are:
 
-| Table                       | Description                      | Grain                       |
-| --------------------------- | -------------------------------- | --------------------------- |
-| `olist_customers_dataset`   | Customer information             | Customer/order relationship |
-| `olist_orders_dataset`      | Order information and timestamps | One row per order           |
-| `olist_order_items_dataset` | Products included in orders      | One row per order item      |
-| `olist_products_dataset`    | Product information              | One row per product         |
-| `olist_sellers_dataset`     | Seller information               | One row per seller          |
+| Table | Description | Grain |
+|---|---|---|
+| `olist_customers_dataset` | Customer information | Customer-level |
+| `olist_orders_dataset` | Order information and timestamps | One row per order |
+| `olist_order_items_dataset` | Products included in orders | One row per order item |
+| `olist_products_dataset` | Product information | One row per product |
+| `olist_sellers_dataset` | Seller information | One row per seller |
 
 ### Main relationships
 
@@ -291,41 +291,25 @@ The project therefore used calendar-aware date matching for the final MoM approa
 ## Project Structure
 
 ```text
-Olist E-Commerce Sales Analysis/
+olist-ecommerce-sales-analysis/
 │
-├── 00. Project Overview/
+├── README.md
 │
-├── 01. SQL/
-│   ├── 01. Data Exploration/
-│   ├── 02. Data Validation/
-│   ├── 03. Sales Analysis/
-│   ├── 04. Customer Analysis/
-│   ├── 05. Product Analysis/
-│   ├── 06. Seller Analysis/
-│   ├── 07. Delivery Analysis/
-│   └── 08. Advanced Analysis/
+├── sql/
+│   ├── 01_Data_Exploration.sql
+│   ├── 02_Data_Validation.sql
+│   ├── 03_Sales_Analysis.sql
+│   ├── 04_Customer_Analysis.sql
+│   ├── 05_Product_Analysis.sql
+│   ├── 06_Seller_Analysis.sql
+│   ├── 07_Delivery_Analysis.sql
+│   └── 08_Advanced_Analysis.sql
 │
-├── 02. Documentation/
-│   ├── Data Dictionary/
-│   ├── Business Questions/
-│   ├── Findings/
-│   └── Learning Notes/
-│
-├── 03. Dataset/
-│   └── Raw/
-│
-├── 04. Project Progress/
-│   ├── Progress Log.md
-│   ├── Problems & Debugging.md
-│   └── SQL Skills Tracker.md
-│
-└── 05. Final Deliverables/
-    ├── Final SQL Scripts/
-    ├── README.md
-    └── Portfolio Decision.md
-```
-
----
+└── documentation/
+    ├── business_questions.md
+    ├── data_dictionary.md
+    ├── findings.md
+    └── learning_notes.md
 
 ## What I Learned
 
@@ -379,16 +363,11 @@ Areas such as query optimization, execution plans, indexing, and deeper SQL perf
 
 ## Project Status
 
-**Status:** Analysis and documentation completed; final packaging in progress.
+Status: Completed
 
-The analytical SQL, documentation, validation notes, learning notes, and project progress tracking have been completed.
+The SQL analysis, data validation, documentation, learning notes, and GitHub portfolio packaging have been completed.
 
-Remaining portfolio work:
-
-* Final SQL packaging
-* README
-* Portfolio decision
-* GitHub preparation
+The repository contains the analytical SQL scripts and supporting documentation used throughout the project.
 
 ---
 
